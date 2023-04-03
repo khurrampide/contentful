@@ -31,8 +31,13 @@ export default function Home({recipes}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className=' bg-yellow-500 grid md:grid-cols-2 gap-16 md:px-[160px] px-[50px]'>
+      <div className=' bg-yellow-500 py-8 uppercase flex flex-col items-center'>
+        <div className='text-3xl font-medium'>Just Add</div>
+        <div className='text-6xl font-bold'>Marmite</div>
+        <div className='font-semibold'>Spread the Joy</div>
+      </div>
+      
+      <div className=' bg-yellow-500 grid md:grid-cols-2 lg:grid-cols-3 gap-16 md:px-[160px] px-[50px]'>
         {
           recipes.map(recipe=> (
             <RecipeCard key={recipe.sys.id} recipe={recipe}/>

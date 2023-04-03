@@ -49,7 +49,7 @@ const RecipeDetails = ({recipe}) => {
     if (!recipe) return <div>Loading...</div>
     const {featuredImage, title, cookingTime, ingredients, method} = recipe.fields
   return (
-    <div>
+    <div className='bg-yellow-500 md:px-[160px] px-[50px]'>
         <div>
             <Image src={'https:' +  featuredImage.fields.file.url} 
                 width={featuredImage.fields.file.details.image.width}
